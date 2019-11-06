@@ -1,0 +1,212 @@
+/*
+Layout
+
+Markup:
+<body>
+  <div class="header-outer">
+      <div class="container">
+            <header class="header clearfix">
+                <div class="logo">
+                     <img src="../images/logo.png" alt="cuda">
+                </div>
+                <nav class="menu">
+                     <ul>
+                          <li><a href="#HOME">HOME</a></li>
+                          <li><a href="#ABOUT">ABOUT</a></li>
+                          <li><a href="#">WORK</a></li>                              
+                          <li><a href="#BLOG">BLOG</a></li>                            
+                          <li><a href="#contact">CONTACT</a></li>
+                     </ul>                                    
+                </nav>                                
+            </header>                            
+      </div>                                            
+  </div>                   
+  <div class="banner-outer">                
+     <div class="container">                
+       <div class="banner">           
+           <p>Hi there! We are the new kinds on the block<br>and we build awesome websites and mobile apps.</p>
+           <button class="button">WORK WITH US!</button>                                
+       </div>
+     </div>    
+  </div>
+  <div class="content-outer">    
+      <div class="container">
+           <div class="search-menu">
+                <div class="search-box">
+                     <input type="text" name="search" placeholder="Search..">
+                     <span class="icon"><i class="fa fa-search"></i></span>                   
+                </div>                
+                <div class="search-links">
+                     <ul>
+                          <li><a href="javascript:void(0)">ALL</a></li>
+                          <li><a href="javascript:void(0)">DRUPAL</a></li>
+                          <li><a href="javascript:void(0)">JAVA</a></li>
+                          <li><a href="javascript:void(0)">WORDPRESS</a></li>
+                     </ul>
+                </div>
+           </div>
+      </div>
+   </div>
+   <div class="content-outer clearfix">
+   <div class="container">
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                   <h2>Oracle Java Card updated for IoT app</h2>
+                   <div class="content-link">
+                      <p><a href="#">java development</a></p>
+                   </div>
+                   <p>Java Card is a software technology providing isolation between secure hardware and software services</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+           <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Drupal development services</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>
+                 </div>
+                 <p>At the Drupal Association, we value highly the commitment made by those who volunteer their time to make these eveents</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-yellow"><img src="../images/wordpress.png" alt="wordpress"></div>
+              </div>
+              <div class="content">
+                 <h2>The Month in WordPress:January 2019</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>The momentum from December's WordPress 5.0 release was maintainted through January with some big announcements and significant</p>
+              </div>                                 
+          </div>                                   
+       </div>                                   
+       <div class="article">                        
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Headless CMS:REST vs JSON</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>                                   
+                 </div>                               
+                 <p>We compare three different web serrvices implementations based on request efficiency, operational simplicity, API dicoervability</p>
+              </div>                         
+          </div>   
+       </div>      
+       <div class="article">              
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+              </div>
+              <div class="content">                    
+                  <h2>Python's popularity surges as a mainstay</h2>                        
+                  <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                  </div>
+                  <p>Java, C, C++ VisualBAsic Net, Kotlin, matlab, Rust, and TypeScript gain while Ruby and F# slip</p>
+              </div>                                    
+          </div>                                   
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-yellow"> <img src="../images/wordpress.png" alt="wordpress"></div>                          
+             </div>
+             <div class="content">
+                 <h2>Cyber Monday 2018 Wordpress</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>Looking for the best Black Friday and Cyber Monday deals on your favourite WordPress products?</p>
+             </div>                                   
+         </div>
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                 <h2>JDK 12 beta:The new features coming</h2>
+                 <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                 </div>
+                 <p>The first beta builds are available, with switch expressions to improve coding and allow pattern</p>    
+             </div>  
+         </div>
+      </div>
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+             </div>
+             <div class="content">
+                 <h2>Drupal Event Organizers</h2>
+                 <div class="content-link">
+                      <p><a href="#">drupal development</a></p>                                    
+                 </div>                                
+                 <p>The evets that every year bring us together all over the World are the lifeblood of our vibrant and diverse community</p>                             
+             </div>                                    
+         </div>
+      </div>
+   </div>
+   <div class="form-outer" id="contact">
+      <div class="container">
+           <div class="contact-form">
+                <div class="heading">
+                     <h3>GET IN TOUCH</h3>
+                </div>
+                <P>1600 Pennsylvaria Ave NW, Washington, DC 20500, Unites States of America. Tel.(202)456-1111 </P>
+                <div class="form-components">
+                     <div class="form-elements">                    
+                          <input type="text" id="fname" name="Your Name" placeholder="Your Name">
+                     </div>
+                     <div class="form-elements">                
+                          <input type="text" id="yemail" name="Your Email" placeholder="Your Email">                
+                     </div>                  
+                     <div class="form-elements full-width">
+                          <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+                     </div>
+                     <div class="form-elements full-width">
+                          <button class="button">SEND MESSAGE</button>
+                     </div>
+                </div>
+           </div>
+      </div>
+   </div>
+   <div class="footer-outer">
+      <div class="container">
+           <footer class="footer">
+                <div class="links">
+                     <ul>                    
+                          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i>Facebook</a></li>                        
+                          <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a></li>
+                          <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i>Google+</a></li>
+                          <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+                          <li><a
+                            href="https://www.google.com/search?q=behance&rlz=1C1GCEV_enIN849IN849&oq=behance&aqs=chrome..69i57j69i60l2j0l3.3782j0j7&sourceid=chrome&ie=UTF-8"><i
+                              class="fa fa-behance"></i>Behance</a>
+                          </li>
+                          <li><a href="https://dribbble.com/"><i class="fa fa-dribbble"></i>Dribbble</a></li>
+                          <li><a href="https://github.com/"><i class="fa fa-github"></i>GitHub</a></li>
+                     </ul>
+                </div>
+           </footer>
+      </div>
+   </div>
+</body>
+
+Styleguide: Layout
+*/

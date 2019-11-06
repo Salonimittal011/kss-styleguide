@@ -1,0 +1,1457 @@
+/* line 1, ../sass/2-Base/_common.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, ../sass/2-Base/_common.scss */
+.container {
+  max-width: 1110px;
+  margin: 0 auto; }
+
+/* line 10, ../sass/2-Base/_common.scss */
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+/*
+Layout
+
+Markup:
+<body>
+  <div class="header-outer">
+      <div class="container">
+            <header class="header clearfix">
+                <div class="logo">
+                     <img src="../images/logo.png" alt="cuda">
+                </div>
+                <nav class="menu">
+                     <ul>
+                          <li><a href="#HOME">HOME</a></li>
+                          <li><a href="#ABOUT">ABOUT</a></li>
+                          <li><a href="#">WORK</a></li>                              
+                          <li><a href="#BLOG">BLOG</a></li>                            
+                          <li><a href="#contact">CONTACT</a></li>
+                     </ul>                                    
+                </nav>                                
+            </header>                            
+      </div>                                            
+  </div>                   
+  <div class="banner-outer">                
+     <div class="container">                
+       <div class="banner">           
+           <p>Hi there! We are the new kinds on the block<br>and we build awesome websites and mobile apps.</p>
+           <button class="button">WORK WITH US!</button>                                
+       </div>
+     </div>    
+  </div>
+  <div class="content-outer">    
+      <div class="container">
+           <div class="search-menu">
+                <div class="search-box">
+                     <input type="text" name="search" placeholder="Search..">
+                     <span class="icon"><i class="fa fa-search"></i></span>                   
+                </div>                
+                <div class="search-links">
+                     <ul>
+                          <li><a href="javascript:void(0)">ALL</a></li>
+                          <li><a href="javascript:void(0)">DRUPAL</a></li>
+                          <li><a href="javascript:void(0)">JAVA</a></li>
+                          <li><a href="javascript:void(0)">WORDPRESS</a></li>
+                     </ul>
+                </div>
+           </div>
+      </div>
+   </div>
+   <div class="content-outer clearfix">
+   <div class="container">
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                   <h2>Oracle Java Card updated for IoT app</h2>
+                   <div class="content-link">
+                      <p><a href="#">java development</a></p>
+                   </div>
+                   <p>Java Card is a software technology providing isolation between secure hardware and software services</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+           <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Drupal development services</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>
+                 </div>
+                 <p>At the Drupal Association, we value highly the commitment made by those who volunteer their time to make these eveents</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-yellow"><img src="../images/wordpress.png" alt="wordpress"></div>
+              </div>
+              <div class="content">
+                 <h2>The Month in WordPress:January 2019</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>The momentum from December's WordPress 5.0 release was maintainted through January with some big announcements and significant</p>
+              </div>                                 
+          </div>                                   
+       </div>                                   
+       <div class="article">                        
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Headless CMS:REST vs JSON</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>                                   
+                 </div>                               
+                 <p>We compare three different web serrvices implementations based on request efficiency, operational simplicity, API dicoervability</p>
+              </div>                         
+          </div>   
+       </div>      
+       <div class="article">              
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+              </div>
+              <div class="content">                    
+                  <h2>Python's popularity surges as a mainstay</h2>                        
+                  <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                  </div>
+                  <p>Java, C, C++ VisualBAsic Net, Kotlin, matlab, Rust, and TypeScript gain while Ruby and F# slip</p>
+              </div>                                    
+          </div>                                   
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-yellow"> <img src="../images/wordpress.png" alt="wordpress"></div>                          
+             </div>
+             <div class="content">
+                 <h2>Cyber Monday 2018 Wordpress</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>Looking for the best Black Friday and Cyber Monday deals on your favourite WordPress products?</p>
+             </div>                                   
+         </div>
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                 <h2>JDK 12 beta:The new features coming</h2>
+                 <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                 </div>
+                 <p>The first beta builds are available, with switch expressions to improve coding and allow pattern</p>    
+             </div>  
+         </div>
+      </div>
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+             </div>
+             <div class="content">
+                 <h2>Drupal Event Organizers</h2>
+                 <div class="content-link">
+                      <p><a href="#">drupal development</a></p>                                    
+                 </div>                                
+                 <p>The evets that every year bring us together all over the World are the lifeblood of our vibrant and diverse community</p>                             
+             </div>                                    
+         </div>
+      </div>
+   </div>
+   <div class="form-outer" id="contact">
+      <div class="container">
+           <div class="contact-form">
+                <div class="heading">
+                     <h3>GET IN TOUCH</h3>
+                </div>
+                <P>1600 Pennsylvaria Ave NW, Washington, DC 20500, Unites States of America. Tel.(202)456-1111 </P>
+                <div class="form-components">
+                     <div class="form-elements">                    
+                          <input type="text" id="fname" name="Your Name" placeholder="Your Name">
+                     </div>
+                     <div class="form-elements">                
+                          <input type="text" id="yemail" name="Your Email" placeholder="Your Email">                
+                     </div>                  
+                     <div class="form-elements full-width">
+                          <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+                     </div>
+                     <div class="form-elements full-width">
+                          <button class="button">SEND MESSAGE</button>
+                     </div>
+                </div>
+           </div>
+      </div>
+   </div>
+   <div class="footer-outer">
+      <div class="container">
+           <footer class="footer">
+                <div class="links">
+                     <ul>                    
+                          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i>Facebook</a></li>                        
+                          <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a></li>
+                          <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i>Google+</a></li>
+                          <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+                          <li><a
+                            href="https://www.google.com/search?q=behance&rlz=1C1GCEV_enIN849IN849&oq=behance&aqs=chrome..69i57j69i60l2j0l3.3782j0j7&sourceid=chrome&ie=UTF-8"><i
+                              class="fa fa-behance"></i>Behance</a>
+                          </li>
+                          <li><a href="https://dribbble.com/"><i class="fa fa-dribbble"></i>Dribbble</a></li>
+                          <li><a href="https://github.com/"><i class="fa fa-github"></i>GitHub</a></li>
+                     </ul>
+                </div>
+           </footer>
+      </div>
+   </div>
+</body>
+
+Styleguide: Layout
+*/
+/* line 1, ../sass/2-Base/_kssOverride.scss */
+.kss-navigation {
+  background: #87509c;
+  text-align: center; }
+  /* line 6, ../sass/2-Base/_kssOverride.scss */
+  .kss-navigation .kss-navigation__title {
+    color: #ffffff; }
+  /* line 10, ../sass/2-Base/_kssOverride.scss */
+  .kss-navigation .kss-nav__ref {
+    color: #ffffff; }
+  /* line 14, ../sass/2-Base/_kssOverride.scss */
+  .kss-navigation .kss-nav__name {
+    color: #ffffff; }
+
+/*
+Header.logo
+
+Markup:
+<div class="logo">
+    <img src="../images/logo.png" alt="cuda">
+</div>
+
+Styleguide: Header.logo
+*/
+/* line 13, ../sass/3-Component/_header.logo.scss */
+.logo {
+  float: left;
+  width: 200px;
+  background: #87509c; }
+
+/*
+Header.nav
+
+Markup:
+<nav class="menu">
+    <ul>
+       <li><a href="#HOME">HOME</a></li>
+       <li><a href="#ABOUT">ABOUT</a></li>
+       <li><a href="#WORK">WORK</a></li>
+       <li><a href="#BLOG">BLOG</a></li>
+       <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+
+Styleguide: Header.nav
+*/
+/* line 19, ../sass/3-Component/_header.nav.scss */
+nav {
+  float: left;
+  background: #87509c; }
+  /* line 23, ../sass/3-Component/_header.nav.scss */
+  nav ul {
+    list-style: none;
+    margin: 10px 0; }
+    /* line 27, ../sass/3-Component/_header.nav.scss */
+    nav ul li {
+      display: inline-block;
+      font-size: 16px; }
+      /* line 31, ../sass/3-Component/_header.nav.scss */
+      nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 22px;
+        transition: all 0.3s ease-in-out; }
+        /* line 39, ../sass/3-Component/_header.nav.scss */
+        nav ul li a:hover {
+          background-color: #643A79; }
+
+/*
+Header
+
+Markup:
+<div class="header-outer">
+   <div class="container">
+       <header class="header clearfix">
+          <div class="logo">
+               <img src="../images/logo.png" alt="cuda">
+          </div>
+          <nav class="menu">
+               <ul>
+                   <li><a href="#HOME">HOME</a></li>
+                   <li><a href="#ABOUT">ABOUT</a></li>
+                   <li><a href="#WORK">WORK</a></li>
+                   <li><a href="#BLOG">BLOG</a></li>
+                   <li><a href="#contact">CONTACT</a></li>
+               </ul>
+          </nav>
+       </header>
+   </div>
+</div>
+
+Styleguide: Header
+*/
+/* line 27, ../sass/3-Component/_header.scss */
+.header-outer {
+  padding: 47px 0;
+  background-color: #87509c; }
+  /* line 31, ../sass/3-Component/_header.scss */
+  .header-outer .header {
+    padding: 0px 10px; }
+    /* line 34, ../sass/3-Component/_header.scss */
+    .header-outer .header::before, .header-outer .header::after {
+      display: table;
+      content: ''; }
+    /* line 40, ../sass/3-Component/_header.scss */
+    .header-outer .header::after {
+      clear: both; }
+    /* line 44, ../sass/3-Component/_header.scss */
+    .header-outer .header .logo {
+      float: left;
+      width: 200px; }
+    /* line 49, ../sass/3-Component/_header.scss */
+    .header-outer .header nav {
+      float: right; }
+      /* line 52, ../sass/3-Component/_header.scss */
+      .header-outer .header nav ul {
+        list-style: none;
+        margin: 10px 0; }
+        /* line 56, ../sass/3-Component/_header.scss */
+        .header-outer .header nav ul li {
+          display: inline-block;
+          font-size: 16px; }
+          /* line 60, ../sass/3-Component/_header.scss */
+          .header-outer .header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 22px;
+            transition: all 0.3s ease-in-out; }
+            /* line 68, ../sass/3-Component/_header.scss */
+            .header-outer .header nav ul li a:hover {
+              background-color: #643A79; }
+
+/*
+Banner.content
+
+Markup:
+<div class="banner">
+  <p>Hi there! We are the new kinds on the block<br>and we build awesome websites and mobile apps.
+  </p>
+</div>
+
+Styleguide: Banner.content
+*/
+/* line 13, ../sass/3-Component/_banner.content.scss */
+.banner {
+  background: #87509c;
+  width: 100%;
+  color: #ffffff;
+  font-size: 42px;
+  padding-top: 103px;
+  text-align: center;
+  padding-bottom: 145px; }
+  /* line 22, ../sass/3-Component/_banner.content.scss */
+  .banner p {
+    padding-bottom: 63px;
+    font-size: 42px; }
+
+/*
+Banner.button
+
+Markup:
+<div class="button">
+   <button class="button">WORK WITH US!</button>
+</div>
+
+Styleguide: Banner.button
+*/
+/* line 13, ../sass/3-Component/_banner.button.scss */
+.button button {
+  background-color: #EB7D4B;
+  color: #ffffff;
+  padding: 28px 80px;
+  text-decoration: none;
+  border: none;
+  border-bottom: 5px solid #f84d00;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 2s ease-in-out; }
+  /* line 24, ../sass/3-Component/_banner.button.scss */
+  .button button:hover {
+    background-color: #f84d00;
+    cursor: pointer; }
+
+/*
+Banner
+
+Markup:
+<div class="banner-outer">
+ <div class="container">
+   <div class="banner">
+      <p>Hi there! We are the new kinds on the block<br>and we build awesome websites and mobile apps.
+      </p>
+      <button class="button">WORK WITH US!</button>
+    </div>
+  </div>
+</div>
+    
+Styleguide: Banner
+*/
+/* line 18, ../sass/3-Component/_banner.scss */
+.banner-outer {
+  background-color: #87509c; }
+  /* line 21, ../sass/3-Component/_banner.scss */
+  .banner-outer .banner {
+    width: 100%;
+    color: #ffffff;
+    font-size: 42px;
+    padding-top: 103px;
+    text-align: center;
+    padding-bottom: 145px; }
+    /* line 29, ../sass/3-Component/_banner.scss */
+    .banner-outer .banner p {
+      padding-bottom: 63px;
+      font-size: 42px; }
+    /* line 34, ../sass/3-Component/_banner.scss */
+    .banner-outer .banner .button {
+      background-color: #EB7D4B;
+      color: #ffffff;
+      padding: 28px 80px;
+      text-decoration: none;
+      border: none;
+      border-bottom: 5px solid #f84d00;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: all 2s ease-in-out; }
+      /* line 45, ../sass/3-Component/_banner.scss */
+      .banner-outer .banner .button:hover {
+        background-color: #f84d00;
+        cursor: pointer; }
+
+/*
+Search.bar
+
+Markup:
+<div class="search-box">
+    <input type="text" name="search" placeholder="Search..">
+</div>
+
+Styleguide: Search.bar
+*/
+/* line 13, ../sass/3-Component/_Search.bar.scss */
+.search-box {
+  width: 50%;
+  float: left;
+  position: relative; }
+
+/* line 19, ../sass/3-Component/_Search.bar.scss */
+input::placeholder {
+  color: #e1e1e1;
+  font-size: 16px;
+  padding: 16px 16px; }
+
+/* line 26, ../sass/3-Component/_Search.bar.scss */
+input[type=text] {
+  width: 100%;
+  background-color: #ffffff;
+  color: #111111;
+  border: 2px solid #e1e1e1;
+  height: 47px;
+  border-radius: 40px; }
+
+/*
+Search.links
+
+Markup:
+<div class="search-links">
+   <ul>
+       <li><a href="javascript:void(0)">ALL</a></li>
+       <li><a href="javascript:void(0)">DRUPAL</a></li>
+       <li><a href="javascript:void(0)">JAVA</a></li>
+       <li><a href="javascript:void(0)">WORDPRESS</a></li>
+    </ul>
+</div>
+
+Styleguide: Search.links
+*/
+/* line 17, ../sass/3-Component/_search.links.scss */
+.search-links {
+  overflow: hidden; }
+  /* line 20, ../sass/3-Component/_search.links.scss */
+  .search-links ul {
+    list-style: none;
+    margin: 10px; }
+    /* line 24, ../sass/3-Component/_search.links.scss */
+    .search-links ul li {
+      display: inline-block;
+      font-size: 20px; }
+      /* line 28, ../sass/3-Component/_search.links.scss */
+      .search-links ul li a {
+        color: #111111;
+        margin-right: 34px;
+        text-decoration: none;
+        font-weight: bold; }
+        /* line 34, ../sass/3-Component/_search.links.scss */
+        .search-links ul li a:hover {
+          border-bottom: 3px solid #ffb79b;
+          transition: border-bottom 0.2s; }
+
+/*
+Search 
+
+Markup:
+<div class="container">
+  <div class="search-menu">
+      <div class="search-box">
+          <input type="text" name="search" placeholder="Search..">
+          <span class="icon"><i class="fa fa-search"></i></span>
+      </div>
+      <div class="search-links">
+           <ul>
+               <li><a href="javascript:void(0)">ALL</a></li>
+               <li><a href="javascript:void(0)">DRUPAL</a></li>
+               <li><a href="javascript:void(0)">JAVA</a></li>
+               <li><a href="javascript:void(0)">WORDPRESS</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+Styleguide: Search
+*/
+/* line 26, ../sass/3-Component/_search.scss */
+.search-menu {
+  padding: 107px 10px 50px 10px;
+  width: 100%;
+  float: left; }
+  /* line 31, ../sass/3-Component/_search.scss */
+  .search-menu .search-box {
+    width: 50%;
+    float: left;
+    position: relative; }
+  /* line 37, ../sass/3-Component/_search.scss */
+  .search-menu input::placeholder {
+    color: #e1e1e1;
+    font-size: 16px;
+    padding: 16px 16px; }
+  /* line 44, ../sass/3-Component/_search.scss */
+  .search-menu input[type=text] {
+    width: 100%;
+    background-color: #ffffff;
+    color: #111111;
+    border: 2px solid #e1e1e1;
+    height: 47px;
+    border-radius: 40px; }
+  /* line 53, ../sass/3-Component/_search.scss */
+  .search-menu .icon {
+    top: 50%;
+    right: 20px;
+    color: #e1e1e1;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+    border-left: none; }
+  /* line 63, ../sass/3-Component/_search.scss */
+  .search-menu .search-links {
+    overflow: hidden; }
+    /* line 66, ../sass/3-Component/_search.scss */
+    .search-menu .search-links ul {
+      list-style: none;
+      margin: 10px; }
+      /* line 70, ../sass/3-Component/_search.scss */
+      .search-menu .search-links ul li {
+        display: inline-block;
+        font-size: 20px; }
+        /* line 74, ../sass/3-Component/_search.scss */
+        .search-menu .search-links ul li a {
+          color: #111111;
+          margin-right: 34px;
+          text-decoration: none;
+          font-weight: bold; }
+          /* line 80, ../sass/3-Component/_search.scss */
+          .search-menu .search-links ul li a:hover {
+            border-bottom: 3px solid #ffb79b;
+            transition: border-bottom 0.2s; }
+
+/*
+Article.content
+
+Markup:
+<div class="article">
+  <div class="article-inner">
+      <div class="image">
+         <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+      </div>
+      <div class="content">
+         <h2>Oracle Java Card updated for IoT app</h2>
+         <div class="content-link">
+             <p><a href="#">java development</a></p>
+         </div>
+         <p>Java Card is a software technology providing isolation between secure hardware and software services</p>
+      </div>
+  </div>
+</div>
+
+Styleguide: Article.content
+*/
+/* line 25, ../sass/3-Component/_article.content.scss */
+.article {
+  padding: 0 10px; }
+  /* line 28, ../sass/3-Component/_article.content.scss */
+  .article::before, .article::after {
+    display: table;
+    content: ''; }
+  /* line 34, ../sass/3-Component/_article.content.scss */
+  .article::after {
+    clear: both; }
+  /* line 38, ../sass/3-Component/_article.content.scss */
+  .article .article-inner {
+    margin-bottom: 50px;
+    display: flex; }
+    /* line 42, ../sass/3-Component/_article.content.scss */
+    .article .article-inner .image {
+      width: 130px;
+      height: 130px; }
+      /* line 46, ../sass/3-Component/_article.content.scss */
+      .article .article-inner .image .img-pink {
+        background-color: #cc227e;
+        padding: 10px 22px; }
+    /* line 52, ../sass/3-Component/_article.content.scss */
+    .article .article-inner .content {
+      padding-left: 30px; }
+      /* line 55, ../sass/3-Component/_article.content.scss */
+      .article .article-inner .content h2 {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0; }
+      /* line 61, ../sass/3-Component/_article.content.scss */
+      .article .article-inner .content p {
+        margin: 0;
+        font-size: 15px; }
+      /* line 66, ../sass/3-Component/_article.content.scss */
+      .article .article-inner .content .content-link {
+        display: block;
+        padding: 10px 0;
+        font-size: 15px;
+        font-style: italic; }
+        /* line 72, ../sass/3-Component/_article.content.scss */
+        .article .article-inner .content .content-link a {
+          text-decoration: none;
+          color: #EB7D4B; }
+
+/*
+Article
+
+Markup:
+<div class="content-outer clearfix">
+   <div class="container">
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                   <h2>Oracle Java Card updated for IoT app</h2>
+                   <div class="content-link">
+                      <p><a href="#">java development</a></p>
+                   </div>
+                   <p>Java Card is a software technology providing isolation between secure hardware and software services</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+           <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Drupal development services</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>
+                 </div>
+                 <p>At the Drupal Association, we value highly the commitment made by those who volunteer their time to make these eveents</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-yellow"><img src="../images/wordpress.png" alt="wordpress"></div>
+              </div>
+              <div class="content">
+                 <h2>The Month in WordPress:January 2019</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>The momentum from December's WordPress 5.0 release was maintainted through January with some big announcements and significant</p>
+              </div>                                 
+          </div>                                   
+       </div>                                   
+       <div class="article">                        
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Headless CMS:REST vs JSON</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>                                   
+                 </div>                               
+                 <p>We compare three different web serrvices implementations based on request efficiency, operational simplicity, API dicoervability</p>
+              </div>                         
+          </div>   
+       </div>      
+       <div class="article">              
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+              </div>
+              <div class="content">                    
+                  <h2>Python's popularity surges as a mainstay</h2>                        
+                  <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                  </div>
+                  <p>Java, C, C++ VisualBAsic Net, Kotlin, matlab, Rust, and TypeScript gain while Ruby and F# slip</p>
+              </div>                                    
+          </div>                                   
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-yellow"> <img src="../images/wordpress.png" alt="wordpress"></div>                          
+             </div>
+             <div class="content">
+                 <h2>Cyber Monday 2018 Wordpress</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>Looking for the best Black Friday and Cyber Monday deals on your favourite WordPress products?</p>
+             </div>                                   
+         </div>
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                 <h2>JDK 12 beta:The new features coming</h2>
+                 <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                 </div>
+                 <p>The first beta builds are available, with switch expressions to improve coding and allow pattern</p>    
+             </div>  
+         </div>
+      </div>
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+             </div>
+             <div class="content">
+                 <h2>Drupal Event Organizers</h2>
+                 <div class="content-link">
+                      <p><a href="#">drupal development</a></p>                                    
+                 </div>                                
+                 <p>The evets that every year bring us together all over the World are the lifeblood of our vibrant and diverse community</p>                             
+             </div>                                    
+         </div>
+      </div>
+   </div>
+</div>
+    
+Styleguide: Article
+*/
+/* line 125, ../sass/3-Component/_article.scss */
+.content-outer {
+  background-color: #e5e5e5; }
+  /* line 127, ../sass/3-Component/_article.scss */
+  .content-outer .article {
+    width: 50%;
+    float: left;
+    padding: 0 10px; }
+    /* line 132, ../sass/3-Component/_article.scss */
+    .content-outer .article::before, .content-outer .article::after {
+      display: table;
+      content: ''; }
+    /* line 138, ../sass/3-Component/_article.scss */
+    .content-outer .article::after {
+      clear: both; }
+    /* line 142, ../sass/3-Component/_article.scss */
+    .content-outer .article .article-inner {
+      margin-bottom: 50px;
+      display: flex; }
+      /* line 146, ../sass/3-Component/_article.scss */
+      .content-outer .article .article-inner .image {
+        width: 130px;
+        height: 130px; }
+        /* line 150, ../sass/3-Component/_article.scss */
+        .content-outer .article .article-inner .image .img-pink {
+          background-color: #cc227e;
+          padding: 10px 22px; }
+        /* line 155, ../sass/3-Component/_article.scss */
+        .content-outer .article .article-inner .image .img-yellow {
+          background-color: #cc8a22;
+          padding: 29px 20px; }
+        /* line 160, ../sass/3-Component/_article.scss */
+        .content-outer .article .article-inner .image .img-blue {
+          padding: 14px 20px;
+          background-color: #203d9b; }
+      /* line 166, ../sass/3-Component/_article.scss */
+      .content-outer .article .article-inner .content {
+        padding-left: 30px; }
+        /* line 169, ../sass/3-Component/_article.scss */
+        .content-outer .article .article-inner .content h2 {
+          font-weight: bold;
+          font-size: 18px;
+          margin: 0; }
+        /* line 175, ../sass/3-Component/_article.scss */
+        .content-outer .article .article-inner .content p {
+          margin: 0;
+          font-size: 15px; }
+        /* line 180, ../sass/3-Component/_article.scss */
+        .content-outer .article .article-inner .content .content-link {
+          display: block;
+          padding: 10px 0;
+          font-size: 15px;
+          font-style: italic; }
+          /* line 186, ../sass/3-Component/_article.scss */
+          .content-outer .article .article-inner .content .content-link a {
+            text-decoration: none;
+            color: #EB7D4B; }
+
+/*
+ContactForm.heading
+
+Markup:
+<div class="heading">
+   <h3>GET IN TOUCH</h3>                
+</div>            
+<P>1600 Pennsylvaria Ave NW, Washington, DC 20500, Unites States of America. Tel.(202)456-1111 </P>
+                    
+Styleguide: ContactForm.heading
+*/
+/* line 13, ../sass/3-Component/_contactform.heading.scss */
+.heading {
+  position: relative;
+  display: inline-block; }
+  /* line 17, ../sass/3-Component/_contactform.heading.scss */
+  .heading h3 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 20px; }
+
+/* line 25, ../sass/3-Component/_contactform.heading.scss */
+.heading::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0%;
+  background-color: #273a71;
+  height: 4px;
+  width: 30%; }
+
+/* line 36, ../sass/3-Component/_contactform.heading.scss */
+p {
+  font-size: 18px; }
+
+/*
+ContactForm.content
+
+Markup:
+<div class="form-elements">
+   <input type="text" id="fname" name="Your Name" placeholder="Your Name">
+</div>
+<div class="form-elements">
+   <input type="text" id="yemail" name="Your Email" placeholder="Your Email">
+</div>
+<div class="form-elements full-width">
+   <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+</div>
+
+Styleguide: ContactForm.content
+*/
+/* line 19, ../sass/3-Component/_contactform.content.scss */
+.form-elements {
+  width: 100%;
+  padding: 0 15px;
+  display: inline-block; }
+  /* line 25, ../sass/3-Component/_contactform.content.scss */
+  .form-elements input::placeholder {
+    color: #30bae7;
+    font-size: 16px; }
+  /* line 36, ../sass/3-Component/_contactform.content.scss */
+  .form-elements input[type=text],
+  .form-elements [type=email] {
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    background-color: #273a71;
+    color: #ffffff; }
+  /* line 46, ../sass/3-Component/_contactform.content.scss */
+  .form-elements textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #273a71;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+    resize: none;
+    font-family: 'Open Sans', sans-serif; }
+  /* line 60, ../sass/3-Component/_contactform.content.scss */
+  .form-elements textarea::placeholder {
+    color: #30bae7;
+    font-size: 16px; }
+  /* line 71, ../sass/3-Component/_contactform.content.scss */
+  .form-elements.full-width {
+    width: 100%; }
+
+/*
+ContactForm.button
+
+Markup:
+<button class="button">SEND MESSAGE</button>
+
+Styleguide: ContactForm.button
+*/
+/* line 10, ../sass/3-Component/_contactform.button.scss */
+button {
+  cursor: pointer;
+  background-color: #30bae7;
+  border: none;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  border-bottom: 5px solid #299ec5;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 28px 80px;
+  font-size: 18px;
+  transition: all 2s ease-in-out; }
+  /* line 24, ../sass/3-Component/_contactform.button.scss */
+  button:hover {
+    background-color: #299ec5;
+    cursor: pointer; }
+
+/*
+ContactForm
+
+Markup:
+<div class="form-outer" id="contact">
+    <div class="container">
+        <div class="contact-form">
+            <div class="heading">
+                <h3>GET IN TOUCH</h3>
+            </div>
+            <P>1600 Pennsylvaria Ave NW, Washington, DC 20500, Unites States of America.
+                    Tel.(202)456-1111 </P>
+            <div class="form-components">
+                <div class="form-elements">
+                  <input type="text" id="fname" name="Your Name" placeholder="Your Name">
+                </div>
+                <div class="form-elements">
+                   <input type="text" id="yemail" name="Your Email" placeholder="Your Email">
+                </div>
+                <div class="form-elements full-width">
+                  <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-elements full-width">
+                   <button class="button">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide: ContactForm
+*/
+/* line 34, ../sass/3-Component/_contactform.scss */
+.form-outer {
+  background-color: #3c5499; }
+  /* line 37, ../sass/3-Component/_contactform.scss */
+  .form-outer .contact-form {
+    padding: 100px 50px;
+    text-align: center;
+    color: #ffffff; }
+    /* line 42, ../sass/3-Component/_contactform.scss */
+    .form-outer .contact-form .heading {
+      position: relative;
+      display: inline-block; }
+      /* line 47, ../sass/3-Component/_contactform.scss */
+      .form-outer .contact-form .heading h3 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-bottom: 20px; }
+    /* line 54, ../sass/3-Component/_contactform.scss */
+    .form-outer .contact-form .heading::after {
+      position: absolute;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0%;
+      background-color: #273a71;
+      height: 4px;
+      width: 30%; }
+    /* line 65, ../sass/3-Component/_contactform.scss */
+    .form-outer .contact-form p {
+      font-size: 18px; }
+    /* line 69, ../sass/3-Component/_contactform.scss */
+    .form-outer .contact-form .form-components {
+      margin-top: 80px;
+      font-size: 0; }
+      /* line 73, ../sass/3-Component/_contactform.scss */
+      .form-outer .contact-form .form-components .form-elements {
+        width: 50%;
+        padding: 0 15px;
+        display: inline-block; }
+        /* line 79, ../sass/3-Component/_contactform.scss */
+        .form-outer .contact-form .form-components .form-elements input::placeholder {
+          color: #30bae7;
+          font-size: 16px; }
+        /* line 90, ../sass/3-Component/_contactform.scss */
+        .form-outer .contact-form .form-components .form-elements input[type=text],
+        .form-outer .contact-form .form-components .form-elements [type=email] {
+          width: 100%;
+          padding: 20px;
+          border: none;
+          border-radius: 4px;
+          margin-bottom: 28px;
+          background-color: #273a71;
+          color: #ffffff; }
+        /* line 101, ../sass/3-Component/_contactform.scss */
+        .form-outer .contact-form .form-components .form-elements textarea {
+          width: 100%;
+          height: 200px;
+          background-color: #273a71;
+          border: none;
+          border-radius: 4px;
+          padding: 20px;
+          color: #ffffff;
+          margin-top: 20px;
+          resize: none;
+          font-family: 'Open Sans', sans-serif; }
+        /* line 115, ../sass/3-Component/_contactform.scss */
+        .form-outer .contact-form .form-components .form-elements textarea::placeholder {
+          color: #30bae7;
+          font-size: 16px; }
+        /* line 126, ../sass/3-Component/_contactform.scss */
+        .form-outer .contact-form .form-components .form-elements.full-width {
+          width: 100%; }
+      /* line 131, ../sass/3-Component/_contactform.scss */
+      .form-outer .contact-form .form-components .button {
+        cursor: pointer;
+        background-color: #30bae7;
+        border: none;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        border-bottom: 5px solid #299ec5;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 28px 80px;
+        font-size: 18px;
+        transition: all 2s ease-in-out; }
+        /* line 145, ../sass/3-Component/_contactform.scss */
+        .form-outer .contact-form .form-components .button:hover {
+          background-color: #299ec5;
+          cursor: pointer; }
+
+/*
+Footer 
+
+Markup:
+<div class="footer-outer">
+  <div class="container">
+     <footer class="footer">
+         <div class="links">
+             <ul>
+                  <li><a href="https://www.facebook.com/">Facebook</a></li>
+                  <li><a href="https://twitter.com/">Twitter</a></li>
+                  <li><a href="https://www.google.com/">Google+</a></li>
+                  <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                  <li><a href="https://www.google.com/search?q=behance&rlz=1C1GCEV_enIN849IN849&oq=behance&aqs=chrome..69i57j69i60l2j0l3.3782j0j7&sourceid=chrome&ie=UTF-8"></i>Behance</a></li>
+                  <li><a href="https://dribbble.com/"></i>Dribbble</a></li>
+                  <li><a href="https://github.com/"></i>GitHub</a></li>
+             </ul>
+          </div>
+      </footer>
+   </div>
+</div>
+
+Styleguide: Footer
+*/
+/* line 26, ../sass/3-Component/_footer.scss */
+.footer-outer {
+  background-color: #344b8e; }
+  /* line 28, ../sass/3-Component/_footer.scss */
+  .footer-outer .footer {
+    padding: 10px 10px; }
+    /* line 31, ../sass/3-Component/_footer.scss */
+    .footer-outer .footer .links {
+      padding: 0 30px; }
+      /* line 34, ../sass/3-Component/_footer.scss */
+      .footer-outer .footer .links ul {
+        list-style: none;
+        padding: 30px 18px;
+        text-align: center; }
+        /* line 39, ../sass/3-Component/_footer.scss */
+        .footer-outer .footer .links ul li {
+          display: inline-block;
+          font-size: 20px;
+          padding-right: 30px; }
+          /* line 44, ../sass/3-Component/_footer.scss */
+          .footer-outer .footer .links ul li:last-child {
+            padding-right: 0px; }
+          /* line 48, ../sass/3-Component/_footer.scss */
+          .footer-outer .footer .links ul li a {
+            color: #ffffff;
+            text-decoration: none; }
+            /* line 52, ../sass/3-Component/_footer.scss */
+            .footer-outer .footer .links ul li a:hover {
+              color: #30bae7; }
+
+/*
+Color
+
+Markup:
+<h1>COLORS</h1>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-white"></div>
+<div class="box-content">
+<p>White</p>
+<p>ffffff<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-black"></div>
+<div class="box-content">
+<p>black</p>
+<p>111111<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-purple"></div>
+<div class="box-content">
+<p>purple</p>
+<p>87509c<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-darkpurple"></div>
+<div class="box-content">
+<p>dark-purple</p>
+<p>643A79<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-orange"></div>
+<div class="box-content">
+<p>orange</p>
+<p>EB7D4B<p>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-darkorange"></div>
+<div class="box-content">
+<p>dark-orange</p>
+<p>f84d00<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-gray"></div>
+<div class="box-content">
+<p>gray</p>
+<p>f9f9f9<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-lightgray"></div>
+<div class="box-content">
+<p>light-gray</p>
+<p>f9f9f9<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-darkgray"></div>
+<div class="box-content">
+<p>dark-gray</p>
+<p>e1e1e1<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-pink"></div>
+<div class="box-content">
+<p>pink</p>
+<p>cc227e<p>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-yellow"></div>
+<div class="box-content">
+<p>yellow</p>
+<p>cc8a22<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-blue"></div>
+<div class="box-content">
+<p>blue</p>
+<p>203d9b<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-lightblue"></div>
+<div class="box-content">
+<p>light-blue</p>
+<p>3c5499<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-navyblue"></div>
+<div class="box-content">
+<p>navy-blue</p>
+<p>273a71<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-skyblue"></div>
+<div class="box-content">
+<p>sky-blue</p>
+<p>30bae7<p>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-seablue"></div>
+<div class="box-content">
+<p>sea-blue</p>
+<p>299ec5<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-darkblue"></div>
+<div class="box-content">
+<p>dark-blue</p>
+<p>344b8e<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-shadow"></div>
+<div class="box-content">
+<p>shadow</p>
+<p>363636<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-lightorange"></div>
+<div class="box-content">
+<p>light-orange</p>
+<p>ffb79b<p>
+</div>
+</div>
+</div>
+
+
+
+Styleguide: Color
+*/
+/* line 153, ../sass/4-Colors/_color.scss */
+h1 {
+  font-size: 30px;
+  color: #87509c;
+  text-align: center; }
+
+/* line 158, ../sass/4-Colors/_color.scss */
+.box {
+  display: flex; }
+  /* line 161, ../sass/4-Colors/_color.scss */
+  .box .box-inner {
+    margin: 35px;
+    height: 150px;
+    width: 170px;
+    border: 1px solid #111111;
+    text-align: center;
+    font-weight: 100; }
+    /* line 169, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-white {
+      background: #ffffff;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 175, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-black {
+      background: #111111;
+      height: 60px; }
+    /* line 181, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-purple {
+      background: #87509c;
+      height: 60px; }
+    /* line 186, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-darkpurple {
+      background: #643A79;
+      height: 60px; }
+    /* line 191, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-orange {
+      background: #EB7D4B;
+      height: 60px; }
+    /* line 196, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-darkorange {
+      background: #f84d00;
+      height: 60px; }
+    /* line 201, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-gray {
+      background: #e5e5e5;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 207, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-lightgray {
+      background: #f9f9f9;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 213, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-darkgray {
+      background: #e1e1e1;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 219, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-pink {
+      background: #cc227e;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 225, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-yellow {
+      background: #cc8a22;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 231, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-blue {
+      background: #203d9b;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 237, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-lightblue {
+      background: #3c5499;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 243, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-navyblue {
+      background: #273a71;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 249, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-skyblue {
+      background: #30bae7;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 254, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-seablue {
+      background: #299ec5;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 259, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-darkblue {
+      background: #344b8e;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 264, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-shadow {
+      background: #363636;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+    /* line 269, ../sass/4-Colors/_color.scss */
+    .box .box-inner .box-color-lightorange {
+      background: #ffb79b;
+      height: 60px;
+      border-bottom: 1px solid #111111; }
+
+/*
+Typography
+
+Markup:
+<div class="heading1">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading2">
+<h3>HI! This is Lorem Ipsum</h3>
+</div>
+<div class="heading3">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading4">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading5">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading6">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+
+Styleguide: Typography
+*/
+/* line 28, ../sass/5-Typography/_typography.scss */
+.heading1 h2 {
+  font-size: 42px;
+  margin: 0; }
+
+/* line 36, ../sass/5-Typography/_typography.scss */
+.heading2 h3 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 0; }
+
+/* line 45, ../sass/5-Typography/_typography.scss */
+.heading3 h2 {
+  font-size: 20px; }
+
+/* line 51, ../sass/5-Typography/_typography.scss */
+.heading4 h2 {
+  font-size: 18px; }
+
+/* line 57, ../sass/5-Typography/_typography.scss */
+.heading5 h2 {
+  font-size: 18px; }
+
+/* line 63, ../sass/5-Typography/_typography.scss */
+.heading6 h2 {
+  font-size: 15px; }
+
+/*# sourceMappingURL=style.css.map */

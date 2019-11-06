@@ -1,0 +1,196 @@
+/*
+Article
+
+Markup:
+<div class="content-outer clearfix">
+   <div class="container">
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                   <h2>Oracle Java Card updated for IoT app</h2>
+                   <div class="content-link">
+                      <p><a href="#">java development</a></p>
+                   </div>
+                   <p>Java Card is a software technology providing isolation between secure hardware and software services</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+           <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Drupal development services</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>
+                 </div>
+                 <p>At the Drupal Association, we value highly the commitment made by those who volunteer their time to make these eveents</p>
+              </div>
+          </div>
+       </div>
+       <div class="article">
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-yellow"><img src="../images/wordpress.png" alt="wordpress"></div>
+              </div>
+              <div class="content">
+                 <h2>The Month in WordPress:January 2019</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>The momentum from December's WordPress 5.0 release was maintainted through January with some big announcements and significant</p>
+              </div>                                 
+          </div>                                   
+       </div>                                   
+       <div class="article">                        
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+              </div>
+              <div class="content">
+                 <h2>Headless CMS:REST vs JSON</h2>
+                 <div class="content-link">
+                     <p><a href="#">drupal development</a></p>                                   
+                 </div>                               
+                 <p>We compare three different web serrvices implementations based on request efficiency, operational simplicity, API dicoervability</p>
+              </div>                         
+          </div>   
+       </div>      
+       <div class="article">              
+          <div class="article-inner">
+              <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+              </div>
+              <div class="content">                    
+                  <h2>Python's popularity surges as a mainstay</h2>                        
+                  <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                  </div>
+                  <p>Java, C, C++ VisualBAsic Net, Kotlin, matlab, Rust, and TypeScript gain while Ruby and F# slip</p>
+              </div>                                    
+          </div>                                   
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-yellow"> <img src="../images/wordpress.png" alt="wordpress"></div>                          
+             </div>
+             <div class="content">
+                 <h2>Cyber Monday 2018 Wordpress</h2>
+                 <div class="content-link">
+                     <p><a href="#">wordpress development</a></p>
+                 </div>
+                 <p>Looking for the best Black Friday and Cyber Monday deals on your favourite WordPress products?</p>
+             </div>                                   
+         </div>
+       </div>
+       <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                 <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+             </div>
+             <div class="content">
+                 <h2>JDK 12 beta:The new features coming</h2>
+                 <div class="content-link">
+                     <p><a href="#">java development</a></p>
+                 </div>
+                 <p>The first beta builds are available, with switch expressions to improve coding and allow pattern</p>    
+             </div>  
+         </div>
+      </div>
+      <div class="article">
+         <div class="article-inner">
+             <div class="image">
+                  <div class="img-blue"> <img src="../images/drupal.png" alt="drupal"></div>
+             </div>
+             <div class="content">
+                 <h2>Drupal Event Organizers</h2>
+                 <div class="content-link">
+                      <p><a href="#">drupal development</a></p>                                    
+                 </div>                                
+                 <p>The evets that every year bring us together all over the World are the lifeblood of our vibrant and diverse community</p>                             
+             </div>                                    
+         </div>
+      </div>
+   </div>
+</div>
+    
+Styleguide: Article
+*/
+
+.content-outer {
+    background-color: $gray;
+    .article {
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+
+        &::before,
+        &::after {
+            display: table;
+            content: '';
+        }
+
+        &::after {
+            clear: both;
+        }
+
+        .article-inner {
+            margin-bottom: 50px;
+            display: flex;
+
+            .image {
+                width: 130px;
+                height: 130px;
+
+                .img-pink {
+                    background-color: $pink;
+                    padding: 10px 22px;
+                }
+
+                .img-yellow {
+                    background-color: $yellow;
+                    padding: 29px 20px;
+                }
+
+                .img-blue {
+                    padding: 14px 20px;
+                    background-color: $blue;
+                }
+            }
+
+            .content {
+                padding-left: 30px;
+
+                h2 {
+                    font-weight: bold;
+                    font-size: $h2-fontsize;
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: $text-fontsize;
+                }
+
+                .content-link {
+                    display: block;
+                    padding: 10px 0;
+                    font-size: $text-fontsize;
+                    font-style: italic;
+
+                    a {
+                        text-decoration: none;
+                        color: $orange;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,52 @@
+/*
+Banner
+
+Markup:
+<div class="banner-outer">
+ <div class="container">
+   <div class="banner">
+      <p>Hi there! We are the new kinds on the block<br>and we build awesome websites and mobile apps.
+      </p>
+      <button class="button">WORK WITH US!</button>
+    </div>
+  </div>
+</div>
+    
+Styleguide: Banner
+*/
+
+.banner-outer {
+  background-color: $purple;
+
+  .banner {
+    width: 100%;
+    color: $white;
+    font-size: $p-fontsize;
+    padding-top: 103px;
+    text-align: center;
+    padding-bottom: 145px;
+
+    p {
+      padding-bottom: 63px;
+      font-size: $p-fontsize;
+    }
+
+    .button {
+      background-color: $orange;
+      color: $white;
+      padding: 28px 80px;
+      text-decoration: none;
+      border: none;
+      border-bottom: 5px solid $dark-orange;
+      border-radius: 5px;
+      font-size: $b-fontsize;
+      transition: all 2s ease-in-out;
+
+      &:hover {
+        background-color: $dark-orange;
+        cursor: pointer;
+      }
+    }
+
+  }
+}

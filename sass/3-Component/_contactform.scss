@@ -1,0 +1,154 @@
+/*
+ContactForm
+
+Markup:
+<div class="form-outer" id="contact">
+    <div class="container">
+        <div class="contact-form">
+            <div class="heading">
+                <h3>GET IN TOUCH</h3>
+            </div>
+            <P>1600 Pennsylvaria Ave NW, Washington, DC 20500, Unites States of America.
+                    Tel.(202)456-1111 </P>
+            <div class="form-components">
+                <div class="form-elements">
+                  <input type="text" id="fname" name="Your Name" placeholder="Your Name">
+                </div>
+                <div class="form-elements">
+                   <input type="text" id="yemail" name="Your Email" placeholder="Your Email">
+                </div>
+                <div class="form-elements full-width">
+                  <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-elements full-width">
+                   <button class="button">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide: ContactForm
+*/
+
+.form-outer {
+    background-color: $light-blue;
+
+    .contact-form {
+        padding: 100px 50px;
+        text-align: center;
+        color: $white;
+
+        .heading {
+            position: relative;
+            display: inline-block;
+
+
+            h3 {
+                font-size: $h3-fontsize;
+                letter-spacing: 5px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .heading::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0%;
+            background-color: $navy-blue;
+            height: 4px;
+            width: 30%;
+        }
+
+        p {
+            font-size: $cp-fontsize;
+        }
+
+        .form-components {
+            margin-top: 80px;
+            font-size: 0;
+
+            .form-elements {
+                width: 50%;
+                padding: 0 15px;
+                display: inline-block;
+
+                @mixin placeholder {
+                    input::placeholder {
+                        @content
+                    }
+                }
+
+                @include placeholder {
+                    color: $sky-blue;
+                    font-size: $cf-fontsize;
+                }
+
+
+                input[type=text],
+                [type=email] {
+                    width: 100%;
+                    padding: 20px;
+                    border: none;
+                    border-radius: 4px;
+                    margin-bottom: 28px;
+                    background-color: $navy-blue;
+                    color: $white;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 200px;
+                    background-color: $navy-blue;
+                    border: none;
+                    border-radius: 4px;
+                    padding: 20px;
+                    color: $white;
+                    margin-top: 20px;
+                    resize: none;
+                    font-family: 'Open Sans', sans-serif;
+                }
+
+                @mixin placeholder {
+                    textarea::placeholder {
+                        @content
+                    }
+                }
+
+                @include placeholder {
+                    color: $sky-blue;
+                    font-size: 16px;
+                }
+
+
+                &.full-width {
+                    width: 100%;
+                }
+            }
+
+            .button {
+                cursor: pointer;
+                background-color: $sky-blue;
+                border: none;
+                padding: 20px;
+                margin-top: 40px;
+                margin-bottom: 80px;
+                border-bottom: 5px solid $sea-blue;
+                border-radius: 5px;
+                color: $white;
+                padding: 28px 80px;
+                font-size: $b-fontsize;
+                transition: all 2s ease-in-out;
+
+                &:hover {
+                    background-color: $sea-blue;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+    }
+}

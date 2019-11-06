@@ -1,0 +1,17 @@
+/*
+Header.logo
+
+Markup:
+<div class="logo">
+    <img src="../images/logo.png" alt="cuda">
+</div>
+
+Styleguide: Header.logo
+*/
+
+
+    .logo {
+        float: left;
+        width: 200px;
+        background: $purple;
+    }

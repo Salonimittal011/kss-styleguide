@@ -1,0 +1,28 @@
+/*
+ContactForm.button
+
+Markup:
+<button class="button">SEND MESSAGE</button>
+
+Styleguide: ContactForm.button
+*/
+
+button {
+    cursor: pointer;
+    background-color: $sky-blue;
+    border: none;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    border-bottom: 5px solid $sea-blue;
+    border-radius: 5px;
+    color: $white;
+    padding: 28px 80px;
+    font-size: $b-fontsize;
+    transition: all 2s ease-in-out;
+
+    &:hover {
+        background-color: $sea-blue;
+        cursor: pointer;
+    }
+}

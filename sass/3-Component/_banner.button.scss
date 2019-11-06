@@ -1,0 +1,29 @@
+/*
+Banner.button
+
+Markup:
+<div class="button">
+   <button class="button">WORK WITH US!</button>
+</div>
+
+Styleguide: Banner.button
+*/
+
+.button {
+    button {
+        background-color: $orange;
+        color: $white;
+        padding: 28px 80px;
+        text-decoration: none;
+        border: none;
+        border-bottom: 5px solid $dark-orange;
+        border-radius: 5px;
+        font-size: $b-fontsize;
+        transition: all 2s ease-in-out;
+
+        &:hover {
+            background-color: $dark-orange;
+            cursor: pointer;
+        }
+    }
+}

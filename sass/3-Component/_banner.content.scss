@@ -1,0 +1,26 @@
+/*
+Banner.content
+
+Markup:
+<div class="banner">
+  <p>Hi there! We are the new kinds on the block<br>and we build awesome websites and mobile apps.
+  </p>
+</div>
+
+Styleguide: Banner.content
+*/
+
+.banner {
+    background: $purple;
+    width: 100%;
+    color: $white;
+    font-size: $p-fontsize;
+    padding-top: 103px;
+    text-align: center;
+    padding-bottom: 145px;
+
+    p {
+        padding-bottom: 63px;
+        font-size: $p-fontsize;
+    }
+}

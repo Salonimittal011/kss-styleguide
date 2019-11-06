@@ -1,0 +1,66 @@
+/*
+Typography
+
+Markup:
+<div class="heading1">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading2">
+<h3>HI! This is Lorem Ipsum</h3>
+</div>
+<div class="heading3">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading4">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading5">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+<div class="heading6">
+<h2>HI! This is Lorem Ipsum</h2>
+</div>
+
+Styleguide: Typography
+*/
+
+.heading1 {
+    h2 {
+        font-size: $p-fontsize;
+        margin: 0;
+    }
+}
+
+.heading2 {
+
+    h3 {
+        font-size: $h3-fontsize;
+        margin: 0;
+        letter-spacing: 0;
+
+    }
+}
+
+.heading3 {
+    h2 {
+        font-size: $f-fontsize;
+    }
+}
+
+.heading4 {
+    h2 {
+        font-size: $h2-fontsize;
+    }
+}
+
+.heading5 {
+    h2 {
+        font-size: $b-fontsize;
+    }
+}
+
+.heading6 {
+    h2 {
+        font-size: $text-fontsize;
+    }
+}

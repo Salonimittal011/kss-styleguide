@@ -1,0 +1,33 @@
+/*
+Search.bar
+
+Markup:
+<div class="search-box">
+    <input type="text" name="search" placeholder="Search..">
+</div>
+
+Styleguide: Search.bar
+*/
+
+
+.search-box {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+input::placeholder {
+    color: $dark-gray;
+    font-size: 16px;
+    padding: 16px 16px;
+}
+
+
+input[type=text] {
+    width: 100%;
+    background-color: $white;
+    color: $black;
+    border: 2px solid $dark-gray;
+    height: 47px;
+    border-radius: 40px;
+}

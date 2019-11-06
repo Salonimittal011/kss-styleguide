@@ -1,0 +1,38 @@
+/*
+ContactForm.heading
+
+Markup:
+<div class="heading">
+   <h3>GET IN TOUCH</h3>                
+</div>            
+<P>1600 Pennsylvaria Ave NW, Washington, DC 20500, Unites States of America. Tel.(202)456-1111 </P>
+                    
+Styleguide: ContactForm.heading
+*/
+
+.heading {
+    position: relative;
+    display: inline-block;
+
+    h3 {
+        font-size: $h3-fontsize;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+
+    }
+}
+
+.heading::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    background-color: $navy-blue;
+    height: 4px;
+    width: 30%;
+}
+
+p {
+    font-size: $cp-fontsize;
+}

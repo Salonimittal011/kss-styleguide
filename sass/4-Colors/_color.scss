@@ -1,0 +1,275 @@
+/*
+Color
+
+Markup:
+<h1>COLORS</h1>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-white"></div>
+<div class="box-content">
+<p>White</p>
+<p>ffffff<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-black"></div>
+<div class="box-content">
+<p>black</p>
+<p>111111<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-purple"></div>
+<div class="box-content">
+<p>purple</p>
+<p>87509c<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-darkpurple"></div>
+<div class="box-content">
+<p>dark-purple</p>
+<p>643A79<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-orange"></div>
+<div class="box-content">
+<p>orange</p>
+<p>EB7D4B<p>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-darkorange"></div>
+<div class="box-content">
+<p>dark-orange</p>
+<p>f84d00<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-gray"></div>
+<div class="box-content">
+<p>gray</p>
+<p>f9f9f9<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-lightgray"></div>
+<div class="box-content">
+<p>light-gray</p>
+<p>f9f9f9<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-darkgray"></div>
+<div class="box-content">
+<p>dark-gray</p>
+<p>e1e1e1<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-pink"></div>
+<div class="box-content">
+<p>pink</p>
+<p>cc227e<p>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-yellow"></div>
+<div class="box-content">
+<p>yellow</p>
+<p>cc8a22<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-blue"></div>
+<div class="box-content">
+<p>blue</p>
+<p>203d9b<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-lightblue"></div>
+<div class="box-content">
+<p>light-blue</p>
+<p>3c5499<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-navyblue"></div>
+<div class="box-content">
+<p>navy-blue</p>
+<p>273a71<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-skyblue"></div>
+<div class="box-content">
+<p>sky-blue</p>
+<p>30bae7<p>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="box-inner">
+<div class="box-color-seablue"></div>
+<div class="box-content">
+<p>sea-blue</p>
+<p>299ec5<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-darkblue"></div>
+<div class="box-content">
+<p>dark-blue</p>
+<p>344b8e<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-shadow"></div>
+<div class="box-content">
+<p>shadow</p>
+<p>363636<p>
+</div>
+</div>
+<div class="box-inner">
+<div class="box-color-lightorange"></div>
+<div class="box-content">
+<p>light-orange</p>
+<p>ffb79b<p>
+</div>
+</div>
+</div>
+
+
+
+Styleguide: Color
+*/
+
+h1{
+    font-size: 30px;
+    color: $purple;
+    text-align: center;
+}
+.box {
+    display: flex;
+
+    .box-inner {
+        margin: 35px;
+        height: 150px;
+        width: 170px;
+        border: 1px solid $black;
+        text-align: center;
+        font-weight: 100;
+
+        .box-color-white {
+            background: $white;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-black {
+            background: $black;
+            height: 60px;
+
+        }
+
+        .box-color-purple {
+            background: $purple;
+            height: 60px;
+        }
+
+        .box-color-darkpurple {
+            background: $dark-purple;
+            height: 60px;
+        }
+
+        .box-color-orange {
+            background: $orange;
+            height: 60px;
+        }
+
+        .box-color-darkorange {
+            background: $dark-orange;
+            height: 60px;
+        }
+
+        .box-color-gray {
+            background: $gray;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-lightgray {
+            background: $light-gray;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-darkgray {
+            background: $dark-gray;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-pink {
+            background: $pink;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-yellow {
+            background: $yellow;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-blue {
+            background: $blue;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-lightblue {
+            background: $light-blue;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-navyblue {
+            background: $navy-blue;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+
+        .box-color-skyblue {
+            background: $sky-blue;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+        .box-color-seablue {
+            background: $sea-blue;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+        .box-color-darkblue {
+            background: $dark-blue;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+        .box-color-shadow {
+            background: $shadow;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+        .box-color-lightorange {
+            background: $light-orange;
+            height: 60px;
+            border-bottom: 1px solid $black;
+        }
+    }
+}

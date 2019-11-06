@@ -1,0 +1,82 @@
+/*
+Article.content
+
+Markup:
+<div class="article">
+  <div class="article-inner">
+      <div class="image">
+         <div class="img-pink"> <img src="../images/java.png" alt="java"></div>
+      </div>
+      <div class="content">
+         <h2>Oracle Java Card updated for IoT app</h2>
+         <div class="content-link">
+             <p><a href="#">java development</a></p>
+         </div>
+         <p>Java Card is a software technology providing isolation between secure hardware and software services</p>
+      </div>
+  </div>
+</div>
+
+Styleguide: Article.content
+*/
+
+
+
+.article {
+    padding: 0 10px;
+
+    &::before,
+    &::after {
+        display: table;
+        content: '';
+    }
+
+    &::after {
+        clear: both;
+    }
+
+    .article-inner {
+        margin-bottom: 50px;
+        display: flex;
+
+        .image {
+            width: 130px;
+            height: 130px;
+
+            .img-pink {
+                background-color: $pink;
+                padding: 10px 22px;
+            }
+        }
+
+        .content {
+            padding-left: 30px;
+
+            h2 {
+                font-weight: bold;
+                font-size: $h2-fontsize;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                font-size: $text-fontsize;
+            }
+
+            .content-link {
+                display: block;
+                padding: 10px 0;
+                font-size: $text-fontsize;
+                font-style: italic;
+
+                a {
+                    text-decoration: none;
+                    color: $orange;
+                }
+            }
+
+        }
+    }
+
+
+}

@@ -1,0 +1,46 @@
+/*
+Header.nav
+
+Markup:
+<nav class="menu">
+    <ul>
+       <li><a href="#HOME">HOME</a></li>
+       <li><a href="#ABOUT">ABOUT</a></li>
+       <li><a href="#WORK">WORK</a></li>
+       <li><a href="#BLOG">BLOG</a></li>
+       <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+
+Styleguide: Header.nav
+*/
+
+
+nav {
+    float: left;
+    background: $purple;
+
+    ul {
+        list-style: none;
+        margin: 10px 0;
+
+        li {
+            display: inline-block;
+            font-size: $li-fontsize;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-right: 22px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $dark-purple;
+
+                }
+            }
+        }
+    }
+}

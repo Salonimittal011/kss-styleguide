@@ -1,0 +1,61 @@
+/*
+Footer 
+
+Markup:
+<div class="footer-outer">
+  <div class="container">
+     <footer class="footer">
+         <div class="links">
+             <ul>
+                  <li><a href="https://www.facebook.com/">Facebook</a></li>
+                  <li><a href="https://twitter.com/">Twitter</a></li>
+                  <li><a href="https://www.google.com/">Google+</a></li>
+                  <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                  <li><a href="https://www.google.com/search?q=behance&rlz=1C1GCEV_enIN849IN849&oq=behance&aqs=chrome..69i57j69i60l2j0l3.3782j0j7&sourceid=chrome&ie=UTF-8"></i>Behance</a></li>
+                  <li><a href="https://dribbble.com/"></i>Dribbble</a></li>
+                  <li><a href="https://github.com/"></i>GitHub</a></li>
+             </ul>
+          </div>
+      </footer>
+   </div>
+</div>
+
+Styleguide: Footer
+*/
+
+.footer-outer {
+    background-color: $dark-blue;
+    .footer {
+        padding: 10px 10px;
+
+        .links {
+            padding: 0 30px;
+
+            ul {
+                list-style: none;
+                padding: 30px 18px;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    font-size: $f-fontsize;
+                    padding-right: 30px;
+
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+
+                    a {
+                        color: $white;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $sky-blue;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
